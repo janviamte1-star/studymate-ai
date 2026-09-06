@@ -2,7 +2,7 @@ import { useState } from "react";
 import ReactMarkdown from "react-markdown";
 
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://studymate-ai-22zv.onrender.com";
 
 function App() {
   const [screen, setScreen] = useState("home");
