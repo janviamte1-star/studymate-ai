@@ -13,9 +13,11 @@ client = genai.Client(
 
 def ask_gemini(prompt: str) -> str:
     models = [
-        "gemini-2.5-flash-lite",
-    "gemini-2.5-flash",
-    "gemini-3.7-flash"
+        "gemini-3.8-flash",
+    "gemini-3.7-flash",
+    "gemini-3.6-flash",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite"
     ]
 
     last_error = None
