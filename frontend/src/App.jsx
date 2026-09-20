@@ -74,11 +74,13 @@ const [historyLoading, setHistoryLoading] = useState(false);
   return newCount;
 });
 
-    } catch  {
-      setUploadMessage(
-        "❌ Backend is not running. Start FastAPI first."
-      );
-    } finally {
+    } catch (error) {
+  console.error("Upload error:", error);
+  setUploadMessage(
+    `❌ Upload error: ${error.message}`
+  );
+} 
+finally {
       setUploading(false);
     }
   };
